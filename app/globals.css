@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer utilities {
+  .h1-bold {
+    @apply text-4xl max-sm:text-2xl font-bold drop-shadow-lg;
+  }
+
+  .h2-medium {
+    @apply text-[32px] max-sm:text-[24px] font-medium drop-shadow-md;
+  }
+
+  .text-normal {
+    @apply text-base max-sm:text-[14px] font-normal;
+  }
+
+  .text-bigger {
+    @apply text-2xl max-sm:text-xl font-normal;
+  }
+
+  .text-medium {
+    @apply text-[20px] font-medium;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    @apply bg-gradient-to-br from-white bg-opacity-50 to-slate-100 border-2 rounded-xl drop-shadow-xl;
+  }
+}
